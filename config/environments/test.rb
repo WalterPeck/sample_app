@@ -33,4 +33,9 @@ SampleApp::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+	#I CHANGED IT HERE @(($*@*$^@(@&  Speeds up the testing by lowering the 
+	#bycrypts(password security) cost function
+	ActiveModel::SecurePassword.min_cost = true	
+	
 end
